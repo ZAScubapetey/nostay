@@ -302,9 +302,18 @@ svg {
   vertical-align: middle;
 }
 
+th, td {
+  padding: 20px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd !important;
+}
+
 table {
   caption-side: bottom;
   border-collapse: collapse;
+ 
 }
 
 caption {
