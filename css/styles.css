@@ -2498,7 +2498,7 @@ textarea.form-control-lg {
      -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -3054,8 +3054,7 @@ textarea.form-control-lg {
   background-color: #28aa25;
   border-color: #288327;
 }
-  box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
-}
+
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #28aa25;
