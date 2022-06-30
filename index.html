@@ -31,13 +31,13 @@
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 this.product.value = "Nostay";
-               // these IDs from the previous steps
+                // these IDs from the previous steps
                 emailjs.sendForm('nogroup', 'nogroup_form', this)
                     .then(function () {
                         console.log('SUCCESS!');
                         alert('Your mail is sent!');
-                       
-            location.reload();
+
+                        location.reload();
                     }, function (error) {
                         console.log('FAILED...', error);
                         alert('Your mail is not sent!');
@@ -63,7 +63,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <!--<li class="nav-item"><a class="nav-link" href="http://apply.nostay.co.za/">Register</a></li>-->
-                    <li class="nav-item"><a class="nav-link" href="http://www.nostay.co.za/">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://search.nostay.co.za/">Log In</a></li>
                 </ul>
             </div>
         </div>
@@ -249,7 +249,7 @@
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                 <div class="col-lg-6">
-                 <!--   <form id="contact-form">
+                    <!--   <form id="contact-form">
                         <label>Number</label>
                         <input type="tel" name="contact_number">
                         <label>Name</label>
@@ -265,7 +265,7 @@
                     <form id="contact-form">
                         <!-- Name input-->
                         <input type="hidden" name="product">
-                      
+
                         <div class="form-floating mb-3">
                             <input class="form-control" name="from_name" type="text" placeholder="Enter your name..."
                                 data-sb-validations="required" />
@@ -288,7 +288,7 @@
                             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
                             </div>
                         </div>
-                         <!-- company name input-->
+                        <!-- company name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="user_company" type="text" placeholder="Nostay"
                                 data-sb-validations="required" />
@@ -296,7 +296,7 @@
                             <div class="invalid-feedback" data-sb-feedback="message:required">A name is required.
                             </div>
                         </div>
-                             <!-- Town input-->
+                        <!-- Town input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" name="user_town" type="text" placeholder="Cape Town"
                                 data-sb-validations="required" />
@@ -359,7 +359,8 @@
             <a class="navbar-brand" href="assets\POPI_Nogroup_Nostay.pdf">Popia</a>
             <a class="navbar-brand" href="privacy.html">Privacy Policy</a>
             <a class="navbar-brand" href="terms.html">Terms And Conditions</a>
-            Copyright &copy; 2022 - NoGroup Pty Ltd</div>
+            Copyright &copy; 2022 - NoGroup Pty Ltd
+        </div>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
