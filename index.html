@@ -30,11 +30,14 @@
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
+                this.product.value = "Nostay";
                // these IDs from the previous steps
                 emailjs.sendForm('nogroup', 'nogroup_form', this)
                     .then(function () {
                         console.log('SUCCESS!');
                         alert('Your mail is sent!');
+                       
+            location.reload();
                     }, function (error) {
                         console.log('FAILED...', error);
                         alert('Your mail is not sent!');
@@ -261,6 +264,8 @@
                     </form>-->
                     <form id="contact-form">
                         <!-- Name input-->
+                        <input type="hidden" name="product">
+                      
                         <div class="form-floating mb-3">
                             <input class="form-control" name="from_name" type="text" placeholder="Enter your name..."
                                 data-sb-validations="required" />
@@ -350,7 +355,11 @@
                 <p>To provide you and your establishment with online tools and ease of use to report
                     individuals, and to protect your establishment, industry and guests.</p>
             </diV>
-            <div class="small text-center text-muted">Copyright &copy; 2022 - NoGroup Pty Ltd</div>
+            <div class="small text-center text-muted"></div>
+            <a class="navbar-brand" href="assets\POPI_Nogroup_Nostay.pdf">Popia</a>
+            <a class="navbar-brand" href="privacy.html">Privacy Policy</a>
+            <a class="navbar-brand" href="terms.html">Terms And Conditions</a>
+            Copyright &copy; 2022 - NoGroup Pty Ltd</div>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
